@@ -1,0 +1,70 @@
+html, body {
+ background-color: #c6d300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.captcha-container {
+  background-color: #0052a3; /* deep blue header */
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  padding-top: 10px;
+  max-height: 136px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.captcha-header {
+  text-align: center;
+  padding: 30px;
+  color: white;
+}
+
+.captcha-header p { 
+  font-size: 12px;
+  margin: 0;
+  letter-spacing: 1px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.captcha-header h1 {
+  margin: -4.5px;
+  font-size: 55px;
+  font-weight: 700;
+  font-family: "Roboto Mono", monospace;
+}
+
+.image-grid {
+  padding-top: 2px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.image-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.ready-btn {
+  display: block;
+  margin: 40px auto;
+  background-color: #0052a3;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 999px;
+  padding: 6px 70px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  
+}
+
+.ready-btn:hover {
+  background-color: #004080;
+}
