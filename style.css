@@ -6,6 +6,7 @@ html, body {
   height: 50vh;
 }
 
+
 .captcha-container {
   background-color: #0052a3; /* deep blue header */
   border-radius: 10px 10px 0px 0px;
@@ -67,4 +68,13 @@ html, body {
 
 .ready-btn:hover {
   background-color: #004080;
+}
+
+@media (max-width: 600px) {
+  .captcha-container,
+  .captcha-header,
+  .captcha-header p,
+  .captcha-header h1,
+  .image-grid,
+  .ready-btn{width:100%;}
 }
